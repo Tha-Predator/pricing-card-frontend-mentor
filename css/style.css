@@ -15,8 +15,8 @@ body{
 }
 
 #card{
-    width: 600px;
-    height: 400px;
+    /* width: 600px;
+    height: 400px; */
     box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     overflow: hidden;
@@ -51,7 +51,7 @@ body{
 
 #bottom-left-section{
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 100%;
     vertical-align: top;
     background-color: #2ab2af;
@@ -84,7 +84,7 @@ margin-bottom: 10px;
 
 #bottom-right-section{
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 100%;
     vertical-align: top;
     background-color: #2EBFBD;
@@ -124,4 +124,22 @@ button:hover{
 #price{
     font-weight: 700;
     font-size: 1.4rem;
+}
+
+@media (min-width:576px) {
+
+    /* #bottom-right-section, #bottom-left-section, #card{
+        width: 100%;
+        height: auto; 
+    } */
+
+    #card{
+        width: 550px;
+        height: 400px;
+    }
+
+    #bottom-right-section, #bottom-left-section{
+        width: 50%;
+    } 
+
 }
